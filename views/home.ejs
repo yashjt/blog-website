@@ -1,0 +1,17 @@
+<%- include("parcial/header") -%>
+
+<h1> HOME</h1>
+
+<P><%= startingContent %> </P>
+
+<%posts.forEach(function(post){ %>
+
+<h1><%= post.title %></h1>
+<p><%=post.content.substring(0,100) + "..." %></p>
+<a href="/posts/<%= post.title %>">readmore</a>
+<% }); %>
+
+
+
+
+
